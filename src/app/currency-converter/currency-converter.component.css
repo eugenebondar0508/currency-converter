@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.currencyconverter {
+    width: 400px;
+    border: 2px solid #37517e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.currencyconverter__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #37517e;
+    border-bottom: 1px solid #37517e;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.currencyconverter__coutry {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.currencyconverter__coutry-item {
+    font-size: 18px;
+    padding: 5px;
+    color: #37517e;
+    border-color: #37517e;
+}
+
+.currencyconverter__coutry-item:focus {
+    outline: none;
+}
+
+.currencyconverte__amount {
+    margin-bottom: 20px;
+}
+
+.currencyconverte__amount-item {
+    box-sizing: border-box;
+    width: 100px;
+    color: #37517e;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.currencyconverte__amount-item:focus {
+    outline: none;
+}
+
+.currencyconverter__result {
+    font-size: 18px;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: #37517e;
+    border: 1px solid #37517e;
+    padding: 10px;
+}
+
+.btn{
+    background-color: #37517e;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #37517e;
+    cursor: pointer;
+    border: 1px solid #37517e;
+}
+

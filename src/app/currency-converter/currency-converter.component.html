@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="currencyconverter">
+        <h2 class="currencyconverter__title">Currency Converter</h2>
+        <div class="currencyconverter__coutry">
+            <label for="country1" class="currencyconverter__coutry-item">From:</label>
+            <select #c1 name="" id="country1" class="currencyconverter__coutry-item" (mouseleave)="changecountry1(c1.value)"> 
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+            </select>
+
+            <label for="country2" class="currencyconverter__coutry-item">to:</label>
+            <select #c2 name="" id="country2" class="currencyconverter__coutry-item"
+             (mouseleave)="changecountry2(c2.value)">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+            </select>
+        </div>
+
+        <button class="btn" (click)="convert()">Convert</button>
+        <div class="currencyconverte__amount">
+
+            <label for="amount" class="currencyconverte__amount-item">How Much?</label>
+            <input id="amount" type="text" class="currencyconverte__amount-item" 
+            [(ngModel)]="amount" (keydown)="convert()"> 
+        </div>
+        <div class="currencyconverter__result">
+           {{result}} {{country2}}
+        </div>
+    </div>
+    
+</div>
